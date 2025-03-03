@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: jc-club-gateway
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: 116.205.138.103:8848
+        prefix: ${spring.application.name}
+        group: DEFAULT_GROUP
+        namespace:
+        file-extension: yaml
+      discovery: # 注册 n a c o s
+        enabled: true
+        server-addr: 116.205.138.103:8848

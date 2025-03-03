@@ -1,0 +1,27 @@
+server:
+  port: 4000
+
+minio:
+  url: http://116.205.138.103:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+storage:
+  service:
+    type: minio
+#nacos:
+#  config:
+#    access-key: nacos
+#    secret-key: nacos
+#    data-id: jc-club-oss.yaml
+#    group: DEFAULT_GROUP
+#    type: yaml
+#    server-addr: http://116.205.138.103:8848/
+#    auto-refresh: true
+#    remote-first: true
+#    bootstrap:
+#      enable: true #nacos启动预热
+spring:
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 100MB
